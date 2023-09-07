@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_87_JonniBig/assets/favicon-0291e329.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookVerse</title>
+
+    
+    <script type="module" crossorigin src="/js_87_JonniBig/assets/shopping-list-b51d0bab.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_87_JonniBig/assets/mobileMenuBurger-0c2bf105.js">
+    <link rel="stylesheet" href="/js_87_JonniBig/assets/shopping-list-53443b83.css">
+    <link rel="stylesheet" href="/js_87_JonniBig/assets/styles-3d2483a4.css">
+  </head>
+  <body>
+    <header class="header container">
+  <div class="header-container">
+    <a class="link logo" href="index.html" aria-label="logotype">
+      <div class="logo-box">
+        <svg class="icon icon-logo" width="24" height="24">
+          <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-logo"></use>
+        </svg>
+        <svg class="logo-text" width="77" height="13">
+          <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-bookshelf"></use>
+        </svg></div
+    ></a>
+
+    <nav class="nav">
+      <ul class="list nav-list">
+        <li class="nav-item-home">
+          <a class="nav-link current link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item-shopping">
+          <a class="nav-link link" href="./shopping-list.html"
+            >Shopping list
+            <svg class="nav-lock" width="20" height="20">
+              <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-shopping-bag"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="checkbox" id="switch" /><label for="switch"></label>
+
+    <a class="log-form" href="./index.html">
+      <svg class="icon-hello" width="30" height="30">
+        <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-vector"></use>
+      </svg>
+      Hello!
+    </a>
+
+    <button
+      class="menu-mobile-open js-open-menu"
+      type="button"
+      aria-label="Menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu-mobile-open-icon" width="28" height="28">
+        <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-align-left"></use>
+      </svg>
+    </button>
+
+    <button
+      class="mobile-menu-close js-close-menu hidden"
+      type="button"
+      aria-label="Mobile menu"
+    >
+      <svg class="mobile-menu-close-icon" width="28" height="28">
+        <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-x-close"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<!--  Mobile-menu  -->
+<div class="mobile-menu container js-menu-container" id="mobile-menu">
+  <div class="mobil-menu-modal js-close-menu">
+    <a aria-label="logo" class="menu-log-form" href="index.html">
+      <svg class="menu-icon-hello" width="30" height="30">
+        <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-vector"></use>
+      </svg>
+      Hello!
+    </a>
+
+    <div class="menu-container">
+      <ul class="mobil-nav-list list">
+        <li class="mobil-nav-item-home">
+          <a class="mobil-nav-link current link" href="./index.html">Home</a>
+        </li>
+        <li class="mobil-nav-item-shopping">
+          <a class="mobil-nav-link link" href="./shopping-list.html"
+            >Shopping list
+            <svg class="mobil-lock" width="20" height="20">
+              <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-shopping-bag"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="menu-login" type="button">
+      Log out
+      <svg class="arrow" width="20" height="20">
+        <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    <main class="container">
+      <div class="container-book-shop">
+        <div class="support">
+          <div class="foundation">
+  <h2 class="found-title">
+    <span>Support Ukraine</span>
+    <svg class="icon-gerb" width="20" height="32">
+      <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-gerb"></use>
+    </svg>
+  </h2>
+  <ul class="found-list"></ul>
+  <div class="btn-skroll-found">
+    <button class="found-up" aria-label="list found up">
+      <svg class="icon-found" width="22" height="22">
+        <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-arrow-up"></use>
+      </svg>
+    </button>
+    <button class="found-down" aria-label="list found down">
+      <svg class="icon-found" width="22" height="22">
+        <use href="/js_87_JonniBig/assets/icomoon-184255f6.svg#icon-arrow-down"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+        </div>
+        <div class="book-shop">
+          <h2 class="book-shop-title">
+            Shopping <span class="colored">List</span>
+          </h2>
+          <ul class="book-shop-list"></ul>
+          <div class="tui-pagination"></div>
+          <div class="empty-list is-hidden">
+            <p class="empty-list-text">
+              This page is empty, add some books and proceed to order.
+            </p>
+            <img
+              srcset="/js_87_JonniBig/assets/EmptyListMob@1x-1c844efd.png 265w, /js_87_JonniBig/assets/EmptyListMob@2x-f60a48f1.png 530w, /js_87_JonniBig/assets/EmptyListTab@1x-fc1d3f54.png 322w, /js_87_JonniBig/assets/EmptyListTab@2x-6b29dade.png 644w"
+              sizes="(min-width: 768px) 322px, (min-width: 375px) 265px, 100vw"
+              src="/js_87_JonniBig/assets/EmptyListMob@1x-1c844efd.png"
+              alt="empty-list-img"
+              class="empty-list-img"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
